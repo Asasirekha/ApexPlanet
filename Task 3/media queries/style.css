@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0d0d0d;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #ffd700;
+}
+
+main {
+  margin-top: 40px;
+}
+
+.product-info {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.product-info img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 10px;
+}
+
+.details {
+  max-width: 500px;
+}
+
+.details h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.details p {
+  font-size: 1rem;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+button {
+  padding: 12px 28px;
+  font-size: 1rem;
+  background-color: #111;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffd700;
+  color: #111;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Responsive Design Using Media Queries */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .product-info {
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .details h2 {
+    font-size: 1.4rem;
+  }
+
+  .details p {
+    font-size: 0.95rem;
+  }
+
+  button {
+    width: 100%;
+  }
+}
