@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/portfolio.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#internship">Internship</a></li>
+          <li><a href="#leadership">Leadership</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      
+
+    <!-- About Me -->
+    <section class="AboutMe" id="about">
+        <div class="aboutme">
+            <h1>I'm Adapa Sasi Rekha, a</h1>
+            <h1 id="typing"></h1>
+            <p class="profession">
+                a passionate frontend developer with expertise in HTML, CSS, and JavaScript.
+                Currently, I'm expanding my skills in full-stack development while working
+                on exciting projects. I love building clean, user-friendly, and interactive web applications.
+            </p>
+        </div>
+        <div class="my-img">
+            <img src="images/myImage.jpg" alt="My Image" />
+            <p>image</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <h1 class="section-title">Skills</h1>
+    <section class="skills" id="skills">
+        <div class="frontend">
+            <div class="skill-card">
+                <h3>HTML</h3>
+                <p>Defines the structure of web pages using semantic elements.</p>
+                <div class="skill-bar"><div class="progress" style="width: 95%;"></div></div>
+            </div>
+            <div class="skill-card">
+                <h3>CSS</h3>
+                <p>Styles web pages with colors, layouts, animations, and responsiveness.</p>
+                <div class="skill-bar"><div class="progress" style="width: 85%;"></div></div>
+            </div>
+            <div class="skill-card">
+                <h3>JavaScript</h3>
+                <p>Makes web pages interactive with dynamic content and logic.</p>
+                <div class="skill-bar"><div class="progress" style="width: 75%;"></div></div>
+            </div>
+        </div>
+        <div class="backend">
+            <div class="skill-card">
+                <h3>MongoDB</h3>
+                <p>A NoSQL database that stores data in JSON-like format for scalability.</p>
+                <div class="skill-bar"><div class="progress" style="width: 35%;"></div></div>
+            </div>
+            <div class="skill-card">
+                <h3>Python</h3>
+                <p>Used for backend development, AI/ML, and automation.</p>
+                <div class="skill-bar"><div class="progress" style="width: 55%;"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <h1 style="margin-left: 10%;">Projects</h1>
+<section class="projects-section" id="projects">
+    <div class="project-card">
+        <div class="flip-card" onclick="window.open('https://github.com/Asasirekha/Rock-paper-scissor-project', '_blank')">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <h2>Rock Paper Scissors</h2>
+                </div>
+                <div class="flip-back">
+                    <p>View Project</p>
+                </div>
+            </div>
+        </div>
+        <p class="project-desc">A fun game using JavaScript logic and dynamic DOM interactions. Try beating the computer!</p>
+    </div>
+
+    <div class="project-card">
+        <div class="flip-card" onclick="window.open('https://github.com/Asasirekha/Netflix-project', '_blank')">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <h2>Netflix Clone</h2>
+                </div>
+                <div class="flip-back">
+                    <p>View Project</p>
+                </div>
+            </div>
+        </div>
+        <p class="project-desc">A front-end Netflix clone replicating the UI with HTML, CSS and a bit of JavaScript.</p>
+    </div>
+
+    <div class="project-card">
+        <div class="flip-card" onclick="window.open('https://github.com/Asasirekha/online-bakery-project', '_blank')">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <h2>Bakery Online</h2>
+                </div>
+                <div class="flip-back">
+                    <p>View Project</p>
+                </div>
+            </div>
+        </div>
+        <p class="project-desc">An online bakery system to order cakes, with a cart, order tracking, and PHP backend.</p>
+    </div>
+
+    <div class="project-card">
+        <div class="flip-card" onclick="window.open('https://github.com/Asasirekha/Todo-List', '_blank')">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <h2>To-Do List</h2>
+                </div>
+                <div class="flip-back">
+                    <p>View Project</p>
+                </div>
+            </div>
+        </div>
+        <p class="project-desc">A minimalist to-do list for productivity, with local storage and task management.</p>
+    </div>
+</section>
+<section id="resume" class="resume-section">
+    <h2>Resume</h2>
+    <p>Want to know more about my experience, education, and skills in detail? Download my resume below.</p>
+    
+    <a href="files/Adapa Sasi Rekha_Resume.docx" download class="resume-btn">
+      <i class="fa-solid fa-download"></i> Download Resume
+    </a>
+  </section>
+  <section id="certifications" class="certification-section">
+    <h2>Certifications</h2>
+    <div class="certification-grid">
+      
+      <div class="cert-card">
+        <h3>CodSoft</h3>
+        <p>Completed Web Development Internship with hands-on project experience.</p>
+        <a href="certifications\322103210002 Codsoft.pdf" target="_blank" class="view-cert-btn">View Certificate</a>
+      </div>
+  
+      <div class="cert-card">
+        <h3>Oasis Infobyte</h3>
+        <p>Built responsive and interactive websites during my Frontend Development internship.</p>
+        <a href="certifications/322103210002-OasisInfobyte.pdf" target="_blank" class="view-cert-btn">View Certificate</a>
+      </div>
+  
+      <div class="cert-card">
+        <h3>MongoDB</h3>
+        <p>Gained practical knowledge of MongoDB basics, CRUD, and data modeling.</p>
+        <a href="certifications/322103210002 A.Sasi Rekha/Connecting to a MongoDB Database.pdf" target="_blank" class="view-cert-btn">View Certificate</a>
+      </div>
+  
+      <div class="cert-card">
+        <h3>Edu Skills</h3>
+        <p>Certified in Cloud Computing Fundamentals AWS collaboration.</p>
+        <a href="certifications/cloud virtual.pdf" target="_blank" class="view-cert-btn">View Certificate</a>
+      </div>
+  
+    </div>
+  </section>
+
+  <!-- Internship Section -->
+<section id="internship" class="internship-section">
+    <h1>Internship Experience</h1>
+    <div class="internship-card">
+      <div class="internship-content">
+        <h2>Web Development Intern</h2>
+        <h3>EduSkills</h3>
+        <p>Completed a 10-week virtual internship focused on Full Stack Web Development. Worked on responsive web design, backend logic, and deployment of full-stack applications using HTML, CSS, JavaScript, and MongoDB.</p>
+        <p class="duration">Duration: July 2024 – Sep 2024 (10 Weeks)</p>
+      </div>
+    </div>
+  </section>
+  
+  <section id="leadership" class="leadership-section">
+    <h1>Leadership & Roles</h1>
+    <div class="leadership-card">
+      <h3>Class Representative (CR)</h3>
+      <p>Served as the Class Representative for 4 consecutive semesters, acting as a bridge between faculty and students, managing communication, and helping resolve academic concerns.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h1>Contact Me</h1>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Adapa Sasi Rekha | All rights reserved</p>
+    <div class="social-icons">
+      <a href="https://github.com/Asasirekha" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/sasi-rekha-adapa-81b427256" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+  </footer>
+  
+    <!-- Script -->
+    <script src="scripts/portfolio.js"></script>
+</body>
+</html>
